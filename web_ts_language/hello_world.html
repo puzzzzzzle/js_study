@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script src="./hello_world.js"></script>
+</head>
+<body>
+<p id="hello_text">init</p>
+<button type="button" onclick="hello('direct_call','hello_text')">direct_call</button>
+<button type="button" id="bt_hello">func</button>
+<script>
+    document.getElementById("bt_hello").addEventListener("click", function () {
+        hello("func", 'hello_text');
+    }, false);
+</script>
+</body>
+</html>
