@@ -1,3 +1,4 @@
+// js 函数原型的方式模拟类, 和lua非常相似, class应该也只是这个的一个语法糖
 function Human(name, age) {
     this.name = name
     this.age = age
