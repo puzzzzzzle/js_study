@@ -15,6 +15,7 @@ function Student(name, age, school) {
     Human.call(this, name, age)
     this.school = school
     // function 也能放在这里实现, 但是: 每次new 对象, 都会创建一个函数实体, 比较浪费
+    // 当然, 一些对象建不可共享的方法, 这样写最好
     this.wastefulFunc = function () {
         console.log("this type is wasteful")
     }
