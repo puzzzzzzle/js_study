@@ -1,7 +1,7 @@
 <html>
 <head>
     <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
-    <script src="./helloWorld.js" defer></script>
+    <script type="module" src="./helloWorld.js" defer></script>
     <title>hello world</title>
 </head>
 <body>
@@ -19,7 +19,8 @@
             <option value="4">s4 name</option>
         </select>
     </p>
-    <input type="button" id="btn" onclick="void (0)" value="click"></input>
+    <input type="button" name="submit" onclick="void (0)" value="click"></input>
+    <p>output is <label name="output"></label></p>
 </form>
 </body>
 </html>

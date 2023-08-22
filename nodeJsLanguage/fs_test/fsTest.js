@@ -1,4 +1,9 @@
-let fs = require("fs");
+import * as fs from "fs"
+import {fileURLToPath} from 'url'
+import path from 'path'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 let txtPath = `${__dirname}/test.txt`
 console.log(`path is ${txtPath}`)

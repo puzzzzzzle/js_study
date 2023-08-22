@@ -17,7 +17,7 @@ $(document).ready(function () {
     console.log("ready")
 })
 
-$("#form1").find(":button")[0].onclick = function () {
+$("#form1").find(":button[name='submit']")[0].onclick = function () {
     console.log("on btn clicked")
     let form = $("#form1")[0]
     let data = new FormData(form)
@@ -26,4 +26,5 @@ $("#form1").find(":button")[0].onclick = function () {
     data.forEach((value, key) => object[key] = value);
     let json = JSON.stringify(object);
     console.log(`json : ${json}`)
+    $("#form1").find("label[name='output']").get(0).innerHTML = json
 }
