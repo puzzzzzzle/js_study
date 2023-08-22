@@ -12,3 +12,18 @@ function changeVar(id, value) {
 }
 
 changeVar("hello_str2", "hello 2")
+
+$(document).ready(function () {
+    console.log("ready")
+})
+
+$("#form1").find(":button")[0].onclick = function () {
+    console.log("on btn clicked")
+    let form = $("#form1")[0]
+    let data = new FormData(form)
+    console.log(`data : ${data}`)
+    let object = {};
+    data.forEach((value, key) => object[key] = value);
+    let json = JSON.stringify(object);
+    console.log(`json : ${json}`)
+}

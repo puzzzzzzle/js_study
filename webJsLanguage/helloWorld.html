@@ -1,10 +1,25 @@
 <html>
 <head>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
     <script src="./helloWorld.js" defer></script>
     <title>hello world</title>
 </head>
 <body>
 <p id="hello_str"></p>
 <p id="hello_str2"></p>
+<form id="form1">
+    <p>i1<input type="text" name="i1"/></p>
+    <p>i2<input type="text" name="i2"/></p>
+    <p>i3<input type="text" name="i3"/></p>
+    <p>
+        <select name="selectVar">
+            <option value="1">s1 name</option>
+            <option value="2">s2 name</option>
+            <option value="3">s3 name</option>
+            <option value="4">s4 name</option>
+        </select>
+    </p>
+    <input type="button" id="btn" onclick="void (0)" value="click"></input>
+</form>
 </body>
 </html>
