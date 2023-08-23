@@ -46,7 +46,7 @@ console.log(`curr created count ${Student.count}`)
 
 class Data {
     d1 = "sss"
-    d2: string
+    d2: string = 'sss'
     d3 = 11
 }
 
