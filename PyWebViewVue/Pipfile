@@ -7,7 +7,7 @@ name = "pypi"
 
 [packages]
 pywebview = "*"
-
+zerorpc = "*"
 
 [requires]
 python_version = ">=3.9"
